@@ -1,0 +1,36 @@
+/* pages/mine/mine.wxss */
+page{
+  background: rgba(238, 238, 238, 0.5);
+  font-size: 0.9rem
+}
+view{
+  margin: 10px 0;
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+.info{
+  height:80px;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 30px
+}
+.info image{
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10px
+}
+
+.info .city{
+  color: #b2b2b2;
+}
+
+.call{
+  margin: 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #4a4
+}

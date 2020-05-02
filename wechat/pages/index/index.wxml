@@ -1,0 +1,45 @@
+<!--pages/index/index.wxml-->
+<login></login>
+
+<swiper autoplay indicator-dots>
+
+  <swiper-item wx:for="{{ads}}"  style="background:green;color:#fff;">
+    <image src="{{'http://localhost:3000'+item.Src}}" binderror='error' mode="aspectFill" style='width:100%;height:100%'></image>
+  </swiper-item>
+
+</swiper>
+
+
+<swiper class='nav' >
+  <swiper-item wx:for="{{categories}}">
+   <!-- <navigator  url="/pages/list/list?id={{item.Id}}" wx:for="{{item}}"> -->
+    <view wx:for="{{item}}"  data-item="{{item}}" bindtap="gotolist">
+      <image src="{{'http://localhost:3000'+item.Src}}"></image>
+      <text>{{item.Name}}</text>
+    </view>
+<!-- </navigator> -->
+  </swiper-item>
+</swiper>
+<view class='hotlist'>
+
+  <view class='block_title' bindtap="showData">热门</view>
+  <input bindinput='input' confirm-type="search" bindconfirm='search' placeholder='搜索' value="{{keyword}}" confirm-type='search'></input>
+  <view class='ticket' wx:for="{{hottickets}}" data-item="{{item}}" bindtap="gototicket">
+    <image src="http://localhost:3000{{item.Src}}"></image>
+    <view>
+      <text class='ticket_title'>{{item.Title}}</text>
+      <view>
+        <text class='ct'>{{item.Name}}</text>
+        <text class='price'>￥{{item.Price}}</text>
+      </view>
+      <view>
+        <text class="tag">特惠票</text> <text class="tag">限量抢购</text>
+      </view>
+    </view>
+  </view>
+  <view class='tip'>
+    <block wx:if="{{hottickets.length==0}}">-- Sorry，没有相关数据 --</block>
+    <block wx:if="{{loading}}">-- 数据加载中 --</block>
+     <block wx:if="{{hottickets.length!=0&&nomore}}">-- 我是有底线的 --</block>
+  </view>
+</view>

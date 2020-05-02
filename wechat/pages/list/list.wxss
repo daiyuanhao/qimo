@@ -1,0 +1,7 @@
+/* pages/list/list.wxss */
+scroll-view{
+  white-space: nowrap;
+}
+view{
+display: inline-block;
+}

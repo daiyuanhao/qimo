@@ -1,0 +1,16 @@
+<!--pages/mine/mine.wxml-->
+<!-- <login bindlogined="afterLogin"></login> -->
+
+<view class="info">
+  <image src="{{userData.avatarUrl}}"></image>
+  <text>{{userData.nickName}}\n</text>
+  <text class="city">{{userData.province}} {{userData.city}}</text>
+</view>
+<view>成为会员</view>
+<view>我的钱包</view>
+<view>学生认证</view>
+<view>我发布的交易信息</view>
+<view>我买到的宝贝</view>
+<view>我卖出的宝贝</view>
+<view>票券商核销平台</view>
+<button class="call">联系客服</button>

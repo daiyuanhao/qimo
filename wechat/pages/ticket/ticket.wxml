@@ -1,0 +1,16 @@
+<!--pages/ticket/ticket.wxml-->
+
+<view class="ticket-img">
+  <image src="http://localhost:3000{{ticket.Src}}"></image>
+</view>
+<view class="ticket-title">{{ticket.Title}} <text class="ticket-tip">客服</text><text class="ticket-tip">分享</text></view>
+<view class="ticket-address">{{ticket.ShopAddress}}</view>
+<view class="ticket-header">门票列表</view>
+<view class="ticket-list">
+  <view>特惠票 (第一波)<text class="ticket-price">￥ {{ticket.Price}}</text></view>
+  <view>
+    <text class="ticket-tag">特惠票</text> <text class="ticket-tag">限量抢购</text> <text class="ticket-buy">立即购买</text>
+  </view>
+</view>
+<view class="ticket-header">购票须知</view>
+<view class="ticket-content">{{content}}</view>

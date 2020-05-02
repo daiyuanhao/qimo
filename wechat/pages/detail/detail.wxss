@@ -1,0 +1,11 @@
+/* pages/detail/detail.wxss */
+
+@import "/wxParse/wxParse.wxss";
+
+.wxParse-p{
+  font-size:20rpx;
+}
+
+
+
+

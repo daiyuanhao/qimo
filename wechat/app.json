@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/mine",
+    "pages/mine/mine",
+    "pages/list/list",
+    "pages/mine/edit",
+    "pages/ticket/ticket"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#19ddcc",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/shouye-1.png",
+        "selectedIconPath": "img/shouye.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "img/yonghu-1.png",
+        "selectedIconPath": "img/yonghu.png"
+      }
+    ]
+  }
+}

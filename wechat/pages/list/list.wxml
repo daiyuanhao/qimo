@@ -1,0 +1,9 @@
+<!--pages/list/list.wxml-->
+<scroll-view scroll-x style="height:200px;" scroll-into-view="{{inview}}" scroll-with-animation>
+  <view id="view1" bindtap="center" style="height:100px;width:200px;border:1px solid #ccc;">1</view>
+  <view id="view2" bindtap="center" style="height:100px;width:200px;border:1px solid #ccc">2</view>
+  <view id="view3"  bindtap="center" style="height:100px;width:200px;border:1px solid #ccc">3</view>
+  <view id="view4" bindtap="center" style="height:100px;width:200px;border:1px solid #ccc">4</view>
+  <view id="view5" bindtap="center" style="height:100px;width:200px;border:1px solid #ccc">5</view>
+
+</scroll-view>

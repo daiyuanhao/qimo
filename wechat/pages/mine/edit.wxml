@@ -1,0 +1,6 @@
+<!--pages/mine/edit.wxml-->
+<picker mode='multiSelector' value="{{select}}" range-key="name" range='{{range}}' bindchange="change" style="border:1px solid #ccc;" bindcolumnchange="cloumnchange" >
+  {{city[select[0]].name}}-{{city[select[0]].city[select[1]].name}}
+</picker>
+
+

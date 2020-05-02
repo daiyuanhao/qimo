@@ -1,0 +1,17 @@
+App({
+  onShow:function(){
+    console.log("小程序显示（后台切换到前台）")
+  },
+  onHide:function(){
+    console.log("小程序切换到后台")
+  },
+  onLaunch(){
+    console.log("小程序启动")
+  },
+  onError:function(){
+    console.log("小程序出错")
+  },
+  onPageNotFound(){
+    console.log("页面没有找到")
+  }
+})

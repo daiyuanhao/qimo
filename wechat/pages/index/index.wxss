@@ -1,0 +1,103 @@
+/* pages/index/index.wxss */
+swiper{
+  height:300rpx;
+}
+page{
+  background: #f1f1f1;
+}
+.nav{
+  height: 180rpx;
+    background: #fff;
+}
+.nav view{
+  width:150rpx;
+  height:180rpx;
+  float:left;
+
+}
+.nav view image{
+  width:100rpx;
+  height: 100rpx;
+  margin:20rpx 25rpx 10rpx 25rpx;
+}
+.nav text{
+  display: block;
+  font-size:26rpx;
+  line-height: 30rpx;
+  text-align: center;
+  color:#555;
+}
+.hotlist{
+  margin-top:20rpx;
+  background: #fff;
+}
+.block_title{
+  border-left:8rpx solid #73dac8;
+  font-size:30rpx;
+  padding:10rpx 20rpx;
+  color:#555;
+}
+.hotlist input{
+  background: #f1f1f1;
+  margin:10rpx;
+   color:#555;
+  font-size:24rpx;
+  line-height: 24rpx;
+  padding:10rpx 20rpx;
+  border-radius: 50rpx;
+}
+.ticket{
+  background: #fff;
+   border-top:1px solid #f1f1f1;
+  overflow: hidden;
+    color:#555;
+}
+.ticket image{
+  float:left;
+  height:140rpx;
+  width:200rpx;
+  margin:10rpx;
+ 
+}
+.ticket>view{
+  float:right;
+  width:530rpx;
+}
+.ticket .ticket_title{
+  font-size:30rpx;
+  box-sizing: border-box;
+  padding: 0 10rpx 0 0;
+  display: block;
+  padding-top:10rpx;
+  width:100%;
+  
+  white-space:nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ticket .ct{
+  font-size:24rpx;
+  color:#999;
+}
+.ticket .price{
+  color:#ffac2f;
+  font-weight: bold;
+  font-size:38rpx;
+  float:right;
+  padding-right:20rpx;
+}
+.ticket .tag{
+  border:1rpx solid #73dac8;
+  font-size:24rpx;
+  display: inline-block;
+  color:#73dac8;
+  padding:0 10rpx;
+  margin:20rpx 10rpx 0 0;
+}
+
+.tip{
+  text-align: center;
+  color:#aaa;
+  font-size:24rpx;
+  line-height: 80rpx;
+}
